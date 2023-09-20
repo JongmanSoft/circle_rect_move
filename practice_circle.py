@@ -42,6 +42,13 @@ def run_rectangle():
         grass.draw_now(400, 30)
         character.draw_now(x, y)
         delay(0.1)
+    for i in range(80,540+1, +10):
+        x = 50
+        y = i
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.1)
     pass
 
 while True:

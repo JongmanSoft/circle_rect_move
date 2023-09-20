@@ -16,7 +16,10 @@ def run_circle():
         clear_canvas_now()
         grass.draw_now(400,30)
         character.draw_now(x,y)
+        update_canvas()
         delay(0.01)
+        get_events()
+
 
 def run_rectangle():
     print("rectangle")
@@ -27,28 +30,36 @@ def run_rectangle():
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
+        update_canvas()
         delay(0.01)
+        get_events()
     for i in range (540 , 80-1 , -10):
         x = 50
         y = i
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
+        update_canvas()
         delay(0.01)
+        get_events()
     for i in range(50, 750 + 1, +10):
         x = i
         y = 80
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
+        update_canvas()
         delay(0.01)
+        get_events()
     for i in range(80,540+1, +10):
         x = 750
         y = i
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
+        update_canvas()
         delay(0.01)
+        get_events()
     pass
 
 while True:
